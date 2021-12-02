@@ -1,6 +1,10 @@
-package aoc
+package day1
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/nllptr/aoc-2021/utils"
+)
 
 func TestFindIncreases(t *testing.T) {
 
@@ -47,7 +51,7 @@ func TestSlidingWindow(t *testing.T) {
 }
 
 func TestDay1Part1(t *testing.T) {
-	input, err := loadInput("./input/day1.txt")
+	input, err := utils.LoadInput("input.txt")
 	if err != nil {
 		t.Error("failed to parse file")
 	}
@@ -56,7 +60,7 @@ func TestDay1Part1(t *testing.T) {
 }
 
 func TestDay1Part2(t *testing.T) {
-	input, err := loadInput("./input/day1.txt")
+	input, err := utils.LoadInput("input.txt")
 	if err != nil {
 		t.Error("failed to parse file")
 	}

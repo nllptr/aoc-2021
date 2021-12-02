@@ -1,9 +1,9 @@
-package aoc
+package utils
 
 import "testing"
 
 func TestLoadInput(t *testing.T) {
-	input, err := loadInput("./input/test.txt")
+	input, err := LoadInput("test_input.txt")
 	if err != nil {
 		t.Error("failed to parse file")
 	}

@@ -1,6 +1,10 @@
-package aoc
+package day2
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/nllptr/aoc-2021/utils"
+)
 
 func TestConvertToCommand(t *testing.T) {
 	direction, amount, err := convertCommand("forward 3")
@@ -52,7 +56,7 @@ func TestMoveWithAim(t *testing.T) {
 }
 
 func TestDay2Part1(t *testing.T) {
-	input, err := loadInput("./input/day2.txt")
+	input, err := utils.LoadInput("input.txt")
 	if err != nil {
 		t.Error("failed to parse file")
 	}
@@ -61,7 +65,7 @@ func TestDay2Part1(t *testing.T) {
 }
 
 func TestDay2Part2(t *testing.T) {
-	input, err := loadInput("./input/day2.txt")
+	input, err := utils.LoadInput("input.txt")
 	if err != nil {
 		t.Error("failed to parse file")
 	}
