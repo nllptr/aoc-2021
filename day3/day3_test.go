@@ -19,7 +19,7 @@ func TestParseGammaResult(t *testing.T) {
 	}
 }
 
-func TestFindGama(t *testing.T) {
+func TestFindGamma(t *testing.T) {
 	input := []string{
 		"00100",
 		"11110",
